@@ -1,0 +1,18 @@
+
+class Animal:
+    def __init__(self,name):
+        self.name = name
+
+    def shot(self):
+        print('{}'.format(self.__class__.__name__))
+       
+
+a = Animal('monter')
+a.shot()
+
+class Cat(Animal):
+    pass
+
+cat = Cat('gefoeld')
+cat.shot()
+print(cat.name)
